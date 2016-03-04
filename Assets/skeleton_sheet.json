@@ -1,0 +1,165 @@
+{"frames": [
+
+{
+	"filename": "arms/blur_0.png",
+	"frame": {"x":0,"y":0,"w":242,"h":259},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":242,"h":259},
+	"sourceSize": {"w":242,"h":259},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "arms/forearm_0.png",
+	"frame": {"x":242,"y":0,"w":59,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":33},
+	"sourceSize": {"w":59,"h":33},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "arms/forearm_a.png",
+	"frame": {"x":301,"y":0,"w":61,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":61,"h":37},
+	"sourceSize": {"w":61,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "arms/hand_2.png",
+	"frame": {"x":362,"y":0,"w":67,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":67,"h":62},
+	"sourceSize": {"w":67,"h":62},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "arms/hand_c.png",
+	"frame": {"x":429,"y":0,"w":69,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":69,"h":59},
+	"sourceSize": {"w":69,"h":59},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "arms/shoulder_0.png",
+	"frame": {"x":0,"y":259,"w":58,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":34},
+	"sourceSize": {"w":58,"h":34},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "arms/shoulder_a.png",
+	"frame": {"x":58,"y":259,"w":64,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+	"sourceSize": {"w":64,"h":32},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "body/chest_0.png",
+	"frame": {"x":122,"y":259,"w":79,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":79,"h":58},
+	"sourceSize": {"w":79,"h":58},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "body/pelvis_0.png",
+	"frame": {"x":201,"y":259,"w":48,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":57},
+	"sourceSize": {"w":48,"h":57},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "head/head_0.png",
+	"frame": {"x":249,"y":259,"w":139,"h":119},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":139,"h":119},
+	"sourceSize": {"w":139,"h":119},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "head/jaw_0.png",
+	"frame": {"x":388,"y":259,"w":71,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":80},
+	"sourceSize": {"w":71,"h":80},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "legs/foot_0.png",
+	"frame": {"x":459,"y":259,"w":30,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":51},
+	"sourceSize": {"w":30,"h":51},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "legs/foot_a.png",
+	"frame": {"x":0,"y":378,"w":28,"h":43},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":43},
+	"sourceSize": {"w":28,"h":43},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "legs/leg_0.png",
+	"frame": {"x":28,"y":378,"w":55,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":55,"h":29},
+	"sourceSize": {"w":55,"h":29},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "legs/leg_a.png",
+	"frame": {"x":83,"y":378,"w":45,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":25},
+	"sourceSize": {"w":45,"h":25},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "legs/thigh_0.png",
+	"frame": {"x":128,"y":378,"w":47,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":47,"h":30},
+	"sourceSize": {"w":47,"h":30},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "legs/thigh_a.png",
+	"frame": {"x":175,"y":378,"w":52,"h":31},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":52,"h":31},
+	"sourceSize": {"w":52,"h":31},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "skeleton_sheet.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":512},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:151134a1c828394e67816eebeb0e2ecd:aadad6dbd2d04eb1a1e1ac96f11c32fa:38db92797466a91f6a2d117613d9c5ed$"
+}
+}
