@@ -5,6 +5,7 @@ precision mediump float;
 uniform sampler2D diffuseTex;
 uniform sampler2D normalTex;
 varying vec2 texCoords;
+varying float vAngle;
 //varying float vAlpha;//TODO?
 
 uniform vec3 lightPos;
@@ -12,6 +13,12 @@ uniform vec4 lightColor;      //light RGBA -- alpha is intensity
 uniform vec2 resolution;      //resolution of screen need to know the position of the pixel
 uniform vec4 ambientColor;    //ambient RGBA -- alpha is intensity
 uniform vec3 falloff;
+
+vec2 rotate(vec2 p, float a)
+{
+return vec2(p.x * cos(a) - p.y * sin(a), p.x * sin(a) + p.y * cos(a));
+}
+	
 void main(void)
 {
 	//vec3 texNormal =  texture2D (uNormals, vTexCoord).rgb;
@@ -24,8 +31,19 @@ void main(void)
 	vec3 lightDir = vec3(lightPos.x / resolution.x, 1.0 - (lightPos.y / resolution.y), lightPos.z);
 	lightDir = vec3(lightDir.xy - (gl_FragCoord.xy / resolution.xy), lightDir.z);
 
-	lightDir.x *= resolution.x / resolution.y;
+	// vec2 rotated = rotate(vec2(lightDir.x,lightDir.y),vAngle);
+	// lightDir.x = rotated.x;
+	// lightDir.y = rotated.y;
 
+	float aspectRatio = resolution.x / resolution.y;
+	
+	float cosR = cos(-vAngle);
+	float sinR = sin(-vAngle);
+	float lightDirX = lightDir.x;
+	lightDir.x = (lightDir.x * cosR - lightDir.y * sinR) * aspectRatio;
+	lightDir.y = lightDirX * sinR + lightDir.y * cosR;
+
+	
 	float D = length(lightDir);
 
 	vec3 N = normalize(texNormal * 2.0 - 1.0);

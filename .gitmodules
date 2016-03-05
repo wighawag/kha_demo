@@ -7,3 +7,6 @@
 [submodule "Libraries/imagesheet"]
 	path = Libraries/imagesheet
 	url = https://github.com/wighawag/imagesheet
+[submodule "Kha"]
+	path = Kha
+	url = https://github.com/KTXSoftware/Kha

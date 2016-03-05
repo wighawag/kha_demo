@@ -55,6 +55,7 @@ class Presenter{
 		var structure = new VertexStructure();
 		structure.add("pos", VertexData.Float2);
 		structure.add("tex", VertexData.Float2);
+		structure.add("angle", VertexData.Float1);
 
 		pipeline = new PipelineState();
 		pipeline.inputLayout = [structure];
@@ -99,16 +100,17 @@ class Presenter{
 		g.setTexture(normalTexUnit, normalImage);
 		
 		g.setFloat4(ambientColorID,0.4,0.4,0.4,0.4);
-		g.setFloat4(lightColorID,1,1,1,1);
+		//g.setFloat4(lightColorID,1,1,1,1);
+		g.setFloat4(lightColorID,0.4,0.4,0.4,0.4);
 		g.setFloat2(resolutionID, framebuffer.width, framebuffer.height);
-		g.setFloat3(falloffID,0.2,0.4,5);
-		trace(model.lightX,model.lightY,model.lightZ);
+		g.setFloat3(falloffID,0.1,0.04,0.06);
+		//g.setFloat3(falloffID,0,0,0);
 		g.setFloat3(lightPosID,model.lightX,model.lightY,model.lightZ);
 		
 		var vData = vertexBuffer.lock();
 		var iData = indexBuffer.lock();
 		
-		SpriterG4.drawSpriter(vData,0,4,0,2,iData,0,-1,imageSheet,model.character,framebuffer.width/2,framebuffer.height);
+		SpriterG4.drawSpriter(vData,0,5,0,2,iData,0,-1,imageSheet,model.character,framebuffer.width/2,framebuffer.height);
 		
 		vertexBuffer.unlock();
 		indexBuffer.unlock();
