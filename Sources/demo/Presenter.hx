@@ -88,6 +88,7 @@ class Presenter{
 	}
 	
 	public function render(now : Float,framebuffer: Framebuffer){
+		
 		var g = framebuffer.g4;
 		g.begin();
 		g.clear(Color.fromFloats(0.0, 0.0, 0.0), 1.0);
@@ -110,7 +111,9 @@ class Presenter{
 		var vData = vertexBuffer.lock();
 		var iData = indexBuffer.lock();
 		
-		SpriterG4.drawSpriter(vData,0,5,0,2,iData,0,-1,imageSheet,model.character,framebuffer.width/2,framebuffer.height);
+		var vertexIndex = 0;
+		
+		vertexIndex = SpriterG4.writeSpriter(vData,0,5,0,2,4,iData,0,vertexIndex,imageSheet,model.character,framebuffer.width/2,framebuffer.height);
 		
 		vertexBuffer.unlock();
 		indexBuffer.unlock();
