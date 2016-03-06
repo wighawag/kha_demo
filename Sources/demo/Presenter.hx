@@ -85,6 +85,7 @@ class Presenter{
 			1000,
 			Usage.DynamicUsage 
 		);
+		
 	}
 	
 	public function render(now : Float,framebuffer: Framebuffer){
@@ -113,7 +114,7 @@ class Presenter{
 		
 		var vertexIndex = 0;
 		
-		vertexIndex = SpriterG4.writeSpriter(vData,0,5,0,2,4,iData,0,vertexIndex,imageSheet,model.character,framebuffer.width/2,framebuffer.height);
+		vertexIndex = SpriterG4.writeSpriterWithRotation(vData,0,5,0,2,4,iData,0,vertexIndex,imageSheet,model.character,model.characterX,framebuffer.height - model.characterY, 1, 1, -Math.PI/10);
 		
 		vertexBuffer.unlock();
 		indexBuffer.unlock();
@@ -124,5 +125,10 @@ class Presenter{
 		g.drawIndexedVertices();
 
 		g.end();
+		
+		var g2 = framebuffer.g2;
+		g2.begin(false);
+		g2.drawLine(0,framebuffer.height,framebuffer.width,framebuffer.height - Math.sin(Math.PI/10) * framebuffer.width,2);
+		g2.end();
 	}
 }

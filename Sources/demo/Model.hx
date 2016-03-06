@@ -17,7 +17,7 @@ class Model{
 	public var lightZ : Float;
 	
 	public function new(){
-		characterX = 0;
+		characterX = -100;
 		characterY = 0;
 		
 		lightX = 0;
@@ -37,7 +37,11 @@ class Model{
 	}
 	
 	public function update(now : Float, delta : Float){
-		characterX += 100 * delta;
+		characterX += 100 * delta; 
+		if(characterX > 1024){
+			characterX -= 1124;
+		}
+		characterY = Math.sin(Math.PI/10) * characterX;
 		character.step(delta);
 	}
 }
